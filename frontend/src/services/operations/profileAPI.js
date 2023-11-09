@@ -57,7 +57,7 @@ export async function getUserEnrolledCourses(token) {
 
 // ================ get Instructor Data  ================
 export async function getInstructorData(token) {
-  const toastId = toast.loading("Loading...")
+  // const toastId = toast.loading("Loading...")
   let result = []
   try {
     const response = await apiConnector("GET", GET_INSTRUCTOR_DATA_API, null, {
@@ -69,6 +69,6 @@ export async function getInstructorData(token) {
     console.log("GET_INSTRUCTOR_DATA_API API ERROR............", error)
     toast.error("Could Not Get Instructor Data")
   }
-  toast.dismiss(toastId)
+  // toast.dismiss(toastId)
   return result
 }
