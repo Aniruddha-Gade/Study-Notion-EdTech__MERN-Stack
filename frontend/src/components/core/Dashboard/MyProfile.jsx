@@ -19,12 +19,6 @@ export default function MyProfile() {
     window.scrollTo(0, 0);
   }, [])
 
-
-  // const { openSideMenu } = useSelector(state => state.sidebar)
-  // this will hide course video , title , desc, if sidebar is open in small device
-  // for good looking i have try this 
-  // if (openSideMenu && window.innerWidth <= 640) return;
-
   return (
     <>
       <h1 className="mb-14 text-4xl font-medium text-richblack-5 font-boogaloo text-center sm:text-left"> My Profile</h1>
