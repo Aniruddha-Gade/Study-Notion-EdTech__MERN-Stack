@@ -29,7 +29,7 @@ const InstructorSection = () => {
         </motion.div>
 
         <div className='lg:w-[50%] flex flex-col'>
-          <div className='text-4xl font-semobold w-[50%] mb-2'>
+          <div className='text-3xl lg:text-4xl font-semobold w-[50%] mb-2'>
             Become an
             <HighlightText text={"Instructor"} />
           </div>
