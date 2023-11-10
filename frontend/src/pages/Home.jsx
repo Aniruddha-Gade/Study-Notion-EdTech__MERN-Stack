@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
-
+import { useDispatch } from 'react-redux';
 
 import HighlightText from '../components/core/HomePage/HighlightText'
-
 import CTAButton from "../components/core/HomePage/Button"
 import CodeBlocks from "../components/core/HomePage/CodeBlocks"
 import TimelineSection from '../components/core/HomePage/TimelineSection'
@@ -12,6 +11,9 @@ import InstructorSection from '../components/core/HomePage/InstructorSection'
 import Footer from '../components/common/Footer'
 import ExploreMore from '../components/core/HomePage/ExploreMore'
 import ReviewSlider from '../components/common/ReviewSlider'
+import Course_Slider from '../components/core/Catalog/Course_Slider'
+
+import { getCatalogPageData } from '../services/operations/pageAndComponentData'
 
 import { MdOutlineRateReview } from 'react-icons/md'
 import { FaArrowRight } from "react-icons/fa"
@@ -47,7 +49,7 @@ const randomImges = [
     backgroundImg111,
 ];
 
-
+// hardcoded
 
 
 
@@ -62,6 +64,27 @@ const Home = () => {
     }, [])
 
     // console.log('bg ==== ', backgroundImg)
+
+    // get courses data
+    const [CatalogPageData, setCatalogPageData] = useState(null);
+    const categoryID = "6506c9dff191d7ffdb4a3fe2" // hard coded
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const fetchCatalogPageData = async () => {
+
+            const result = await getCatalogPageData(categoryID, dispatch);
+            setCatalogPageData(result);
+            // console.log("page data ==== ",CatalogPageData);
+        }
+        if (categoryID) {
+            fetchCatalogPageData();
+        }
+    }, [categoryID])
+
+
+    // console.log('================ CatalogPageData?.selectedCourses ================ ', CatalogPageData)
+
 
     return (
         <React.Fragment>
@@ -125,6 +148,7 @@ const Home = () => {
                     </div>
                 </div>
 
+                {/* animated code */}
                 <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between'>
                     {/* Code block 1 */}
                     <div className=''>
@@ -190,6 +214,21 @@ const Home = () => {
                             backgroundGradient={"code-block2-grad"}
                         />
                     </div>
+
+                    {/* course slider */}
+                    <div className='mx-auto box-content w-full max-w-maxContentTab px- py-12 lg:max-w-maxContent'>
+                        <h2 className='text-white mb-6 text-2xl '>
+                            Popular Picks for You 🏆
+                        </h2>
+                        <Course_Slider Courses={CatalogPageData?.selectedCategory?.courses} />
+                    </div>
+                    <div className=' mx-auto box-content w-full max-w-maxContentTab px- py-12 lg:max-w-maxContent'>
+                        <h2 className='text-white mb-6 text-2xl '>
+                            Top Enrollments Today 🔥
+                        </h2>
+                        <Course_Slider Courses={CatalogPageData?.mostSellingCourses} />
+                    </div>
+
 
                     <ExploreMore />
                 </div>
