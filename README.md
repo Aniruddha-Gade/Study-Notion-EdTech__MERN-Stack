@@ -12,11 +12,40 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/gif.gif' />
 
 
+## Table of Contents
+
+## Table of Contents
+
+
+| Section                 | Description                                  |
+|-------------------------|----------------------------------------------|
+| [StudyNotion Aim](#studynotion-aim-)        | 📚 Overview of StudyNotion's goals            |
+| [Tech Stack](#tech-stack-)             | 💻🔧 Technologies used in the project         |
+| [System Architecture](#system-architecture-)    | 🏰 Overview of the system architecture      |
+| [Architecture Diagram](#architecture-diagram-)   | 🏗️ Diagram illustrating the architecture   |
+| [Schema](#schema-)                  | 🗂 Explanation of data schemas used          |
+| [React Hooks](#react-hooks-)            | 🎣 Overview of React Hooks utilized          |
+| [React Library](#-react-library)         | ⚛️📚 Overview of React Libraries used        |
+
+
+
+
+## Table of Content 
+StudyNotion Aim  📚
+ Tech Stack 💻🔧 
+System Architecture  🏰
+# Architecture Diagram  🏰
+pages 
+Schema
+React Hooks
+React Library
+
+
 ## StudyNotion Aim 📚 <br/>
 1️⃣ A seamless and interactive learning experience for students, making education more accessible and engaging.<br/>
 2️⃣ A platform for instructors to showcase their expertise and connect with learners across the globe.<br/>
 
-# Tech Stack 💻🔧 
+## Tech Stack 💻🔧 
 
 ## Frontend 🎨 : 
 <code title="React.js"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/react%20ogo.png"></code>
@@ -39,7 +68,8 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
 
 
 
-## System Architecture 🏰 <br/>
+## System Architecture 🏰 
+<br/>
 ☝ The StudyNotion ed-tech platform consists of three main components:  <br/>
 The front end, the back end, and the database. The platform follows a client-server architecture, with the front end serving as the client and the back end and database serving as the server.
 
@@ -57,6 +87,7 @@ The database for the platform is built using MongoDB, which is a NoSQL database 
 ## Architecture Diagram 🏗️ 
 Here is a high-level diagram that illustrates the architecture of the StudyNotion ed-tech platform:
 
+<img width='60%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Architecture%20Diagram.png' />
 
 
 <hr/>
@@ -106,6 +137,9 @@ The back-end of StudyNotion uses several data models and database schemas to man
 
 The database for the platform is built using MongoDB, a NoSQL database that provides a flexible and scalable data storage solution. MongoDB allows for the storage of unstructured and semi-structured data. The database stores the course content, user data, and other relevant information related to the platform.
 
+## Schema
+<img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Schema.png' />
+
 <hr/>
 
 
@@ -124,8 +158,9 @@ Utilized several React hooks for efficient state management and dynamic behavior
 - `useForm`
 - `Custom-Hook`
 
+<br/>
 
-📚 **React Library**:
+## 📚 **React Library**:
 
 - 🚀 **Lazy Loading**: Enhance performance by lazily loading images using the react-lazy-load-image library.
 - 📊 **Chart.js:**  Versatile charting library for creating interactive and visually appealing charts.
