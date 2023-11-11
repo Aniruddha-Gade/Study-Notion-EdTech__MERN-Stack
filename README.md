@@ -12,7 +12,6 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/gif.gif' />
 
 
-## Table of Contents
 
 ## Table of Contents
 
