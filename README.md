@@ -30,15 +30,6 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
 
 
 
-## Table of Content 
-StudyNotion Aim  📚
- Tech Stack 💻🔧 
-System Architecture  🏰
-# Architecture Diagram  🏰
-pages 
-Schema
-React Hooks
-React Library
 
 
 ## StudyNotion Aim 📚 
