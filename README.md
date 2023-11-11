@@ -1,17 +1,44 @@
+
+<img src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/frontend/src/assets/Logo/Logo-Full-Light.png' />
+
+# Project Description 📝
+StudyNotion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. <br/>
+The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
+
+
+<h2>Live link 🌍📡 - [  https://study-notion-mern-stack.netlify.app/  ]</h2>
+<hr/>
+
+<img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/gif.gif' />
+
+
+
 ## Table of Contents
+
 
 | Section                 | Description                                  |
 |-------------------------|----------------------------------------------|
-| [StudyNotion Aim](#studynotion-aim)        | 📚 Overview of StudyNotion's goals            |
-| [Tech Stack](#tech-stack)             | 💻🔧 Technologies used in the project         |
-| [System Architecture](#system-architecture)    | 🏰 Overview of the system architecture      |
-| [Architecture Diagram](#architecture-diagram)   | 🏗️ Diagram illustrating the architecture   |
-| [Schema](#schema)                  | 🗂 Explanation of data schemas used          |
-| [React Hooks](#react-hooks)            | 🎣 Overview of React Hooks utilized          |
-| [React Library](#react-library)         | ⚛️📚 Overview of React Libraries used        |
-| [Screen Preview](#screen-preview)         | 🖥️ Screen Preview        |
+| [StudyNotion Aim](#studynotion-aim-)        | 📚 Overview of StudyNotion's goals            |
+| [Tech Stack](#tech-stack-)             | 💻🔧 Technologies used in the project         |
+| [System Architecture](#system-architecture-)    | 🏰 Overview of the system architecture      |
+| [Architecture Diagram](#architecture-diagram-)   | 🏗️ Diagram illustrating the architecture   |
+| [Schema](#schema-)                  | 🗂 Explanation of data schemas used          |
+| [React Hooks](#react-hooks-)            | 🎣 Overview of React Hooks utilized          |
+| [React Library](#-react-library)         | ⚛️📚 Overview of React Libraries used        |
+| [Screen Preview](#-screen-preview)         | 🖥️ Screen Preview        |
 
 
+
+
+## Table of Content 
+StudyNotion Aim  📚
+ Tech Stack 💻🔧 
+System Architecture  🏰
+# Architecture Diagram  🏰
+pages 
+Schema
+React Hooks
+React Library
 
 
 ## StudyNotion Aim 📚 <br/>
