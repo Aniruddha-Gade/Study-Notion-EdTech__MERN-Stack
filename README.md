@@ -41,7 +41,8 @@ React Hooks
 React Library
 
 
-## StudyNotion Aim 📚 <br/>
+## StudyNotion Aim 📚 
+<br/>
 1️⃣ A seamless and interactive learning experience for students, making education more accessible and engaging.<br/>
 2️⃣ A platform for instructors to showcase their expertise and connect with learners across the globe.<br/>
 
@@ -136,7 +137,7 @@ The back-end of StudyNotion uses several data models and database schemas to man
 ### Database 🛢️
 The database for the platform is built using MongoDB, a NoSQL database that provides a flexible and scalable data storage solution. MongoDB allows for the storage of unstructured and semi-structured data. The database stores the course content, user data, and other relevant information related to the platform.
 
-## Schema
+## Schema 📋
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Schema.png' />
 
 <hr/>
