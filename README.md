@@ -25,18 +25,15 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
 
 
 ## Backend :
-<code title="Nodejs"><img height="80" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/nodejs%20logo.png"></code>
 <code title="Nodejs"><img height="80" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/nodejs-logo.png"></code>
 <code title="Express"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/express%20logo.png"></code>
-<code title="Tailwind css"><img height="40" src=""></code>
-<code title="Tailwind css"><img height="35" src=""></code>
+<code title="Express"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/express%20logo.png"></code>
 
 
 ## Database
-
-<div align ="center">
 <code title="Mongodb"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/mongodb%20logo.png"></code>
-</div>
+
+<<hr/>
 
 ## System Architecture <br/>
 The StudyNotion ed-tech platform consists of three main components:  <br/>
