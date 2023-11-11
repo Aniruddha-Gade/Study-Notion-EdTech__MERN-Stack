@@ -178,5 +178,5 @@ Utilized several React hooks for efficient state management and dynamic behavior
 
 ##  🖥️ Screen Preview:
 
-# 🏠 Random Home Page Background 
+ 
  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/home1.png) 
