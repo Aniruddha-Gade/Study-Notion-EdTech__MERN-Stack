@@ -53,7 +53,7 @@ const TimelineSection = () => {
                             return (
                                 <div className='flex flex-row gap-6' key={index}>
 
-                                    <div className='w-[50px] h-[50px] bg-white flex items-center'>
+                                    <div className='w-[50px] h-[50px] rounded-full bg-richblue-500 flex justify-center items-center'>
                                         <img src={element.Logo} />
                                     </div>
 
