@@ -86,7 +86,7 @@ The database for the platform is built using MongoDB, which is a NoSQL database 
 
 
 ## Architecture Diagram 🏗️
-
+<br/>
 Here is a high-level diagram that illustrates the architecture of the StudyNotion ed-tech platform:
 <img width='60%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Architecture%20Diagram.png' />
 
@@ -177,6 +177,6 @@ Utilized several React hooks for efficient state management and dynamic behavior
 
 
 ##  🖥️ Screen Preview:
-
- 
+<br/>
+ # 🏠 Random Home Page Background
  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/home1.png) 
