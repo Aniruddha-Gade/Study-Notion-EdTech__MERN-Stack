@@ -92,7 +92,7 @@ Here is a high-level diagram that illustrates the architecture of the StudyNotio
 #### The front end of StudyNotion has all the necessary pages that an ed-tech platform should have. Some of these pages are: 
 
 For Students:
-- **Homepage 🏠:** A brief introduction to the platform with links to the course list and user details.
+- **Homepage 🏠:** A brief introduction to the platform with links to the course list and user details and random background.
 - **Course List 📚:** A list of all the courses available on the platform, along with their descriptions and ratings.
 - **Wishlist 💡:** Displays all the courses that a student has added to their wishlist.
 - **Cart Checkout 🛒 :** Allows the user to complete course purchases.
@@ -173,7 +173,6 @@ Utilized several React hooks for efficient state management and dynamic behavior
 
 
 ##  🖥️ Screen Preview:
-<br/>
 
 # Random Home Page Background 🏠 
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/home3.png' />
