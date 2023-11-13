@@ -127,7 +127,7 @@ function Catalog() {
                 <div className="section_heading">
                     Top courses in {catalogPageData?.differentCategory?.name}
                 </div>
-                <div className="py-8">
+                <div>
                     <Course_Slider
                         Courses={catalogPageData?.differentCategory?.courses}
                     />

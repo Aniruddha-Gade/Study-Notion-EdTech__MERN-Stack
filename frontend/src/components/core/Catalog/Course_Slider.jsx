@@ -28,7 +28,7 @@ function Course_Slider({ Courses }) {
               slidesPerView: 3,
             },
           }}
-          className="max-h-[30rem]"
+          className="max-h-[30rem] pt-8 px-2"
         >
           {Courses?.map((course, i) => (
             <SwiperSlide key={i}>
