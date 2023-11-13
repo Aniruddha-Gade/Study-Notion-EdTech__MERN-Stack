@@ -153,6 +153,7 @@ Utilized several React hooks for efficient state management and dynamic behavior
 - `useNavigate`
 - `useRef`
 - `useForm`
+- `useDropzone`
 - `Custom-Hook`
 
 <br/>
