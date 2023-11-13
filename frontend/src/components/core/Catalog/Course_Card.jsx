@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 
 import GetAvgRating from "../../../utils/avgRating"
 import RatingStars from "../../common/RatingStars"
+import Img from './../../common/Img';
 
 
 
@@ -20,11 +21,11 @@ function Course_Card({ course, Height }) {
   // console.log("count............", avgReviewCount)
 
   return (
-    <>
+    <div className='hover:scale-[1.03] transition-all duration-200 z-50 '>
       <Link to={`/courses/${course._id}`}>
         <div className="">
           <div className="rounded-lg">
-            <img
+            <Img
               src={course?.thumbnail}
               alt="course thumnail"
               className={`${Height} w-full rounded-xl object-cover `}
@@ -55,7 +56,7 @@ function Course_Card({ course, Height }) {
           </div>
         </div>
       </Link>
-    </>
+    </div>
   )
 }
 
