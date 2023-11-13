@@ -228,16 +228,16 @@ Utilized several React hooks for efficient state management and dynamic behavior
 # Instructor Data 2
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/instrctor%20data2.png' />
 
-# My Courses 2
+# My Courses 1
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/myCourses1.png' />
 
-# My Courses 1
+# My Courses 2
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/myCourses2.png' />
 
 # View Courses 1
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/view%20course1.png' />
 
-# View Courses 1
+# View Courses 2
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/view%20course2.png' />
 
 
