@@ -17,6 +17,11 @@ import { FaStar } from "react-icons/fa"
 import { apiConnector } from "../../services/apiConnector";
 import { ratingsEndpoints } from "../../services/apis"
 
+
+
+
+
+
 function ReviewSlider() {
   const [reviews, setReviews] = useState(null)
   const truncateWords = 15
@@ -81,7 +86,7 @@ function ReviewSlider() {
                       className="h-9 w-9 rounded-full object-cover"
                     />
                     <div className="flex flex-col">
-                      <h1 className="font-semibold text-richblack-5">{`${review?.user?.firstName} ${review?.user?.lastName}`}</h1>
+                      <h1 className="font-semibold text-richblack-5 capitalize">{`${review?.user?.firstName} ${review?.user?.lastName}`}</h1>
                       <h2 className="text-[12px] font-medium text-richblack-500">
                         {review?.course?.courseName}
                       </h2>
