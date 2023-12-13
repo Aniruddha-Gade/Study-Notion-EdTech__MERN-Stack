@@ -6,8 +6,12 @@ StudyNotion is a fully functional ed-tech platform that enables users to create,
 The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
 
 
+<h2>Explanation Video 📺 - [ https://www.youtube.com/watch?v=UP-kqPs4dJ8 ]</h2>
+<hr/>
+
 <h2>Live link 🌍📡 - [  https://study-notion-mern-stack.netlify.app/  ]</h2>
 <hr/>
+
 
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/home1.png' />
 
