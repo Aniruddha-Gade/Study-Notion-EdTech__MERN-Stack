@@ -60,6 +60,9 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
 ## Database 🛢️ :
 <code title="Mongodb"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/mongodb%20logo.png"></code>
 
+## Cloudinary Integration ☁️
+<code title="Mongodb"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/cloudinary-logo.jpg"></code>
+
 <hr/>
 
 
