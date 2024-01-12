@@ -180,7 +180,7 @@ Utilized several React hooks for efficient state management and dynamic behavior
 
 
 
-##  🖥️ Screen Preview:
+##  🖥️ Screen Preview :
 
 # Random Home Page Background 🏠 
 <img width='100%' src='https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/home3.png' />
