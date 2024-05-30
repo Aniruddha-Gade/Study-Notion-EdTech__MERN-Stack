@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { createNewCategory, fetchCourseCategories } from "../../../services/operations/courseDetailsAPI";
+import { createNewCategory, deleteCategory, fetchCourseCategories } from "../../../services/operations/courseDetailsAPI";
 import IconBtn from '../../common/IconBtn';
+
 import { IoIosAdd } from "react-icons/io";
 import { useSelector } from "react-redux";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 
 // loading skeleton
@@ -47,6 +49,9 @@ const CreateCategory = () => {
     await createNewCategory(newCategory, description, token)
   };
 
+  const handleDeleteCategory = async (categoryId) => {
+    await deleteCategory(categoryId, token)
+  }
 
 
   return (
@@ -85,7 +90,12 @@ const CreateCategory = () => {
             :
 
             subLinks?.map((subLink, i) => (
-              <p key={i}>{subLink.name}</p>
+              <div key={i} className="flex justify-between gap-10">
+                <p>{subLink.name}</p>
+                <button onClick={()=>handleDeleteCategory(subLink._id)}>
+                  <RiDeleteBin6Line className="hover:text-pink-200 " />
+                </button>
+              </div>
             ))}
       </div>
 

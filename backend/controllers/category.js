@@ -40,6 +40,39 @@ exports.createCategory = async (req, res) => {
 }
 
 
+// ================ delete Category ================
+exports.deleteCategory = async (req, res) => {
+    try {
+        // extract data
+        const { categoryId } = req.body;
+
+        // validation
+        if (!categoryId) {
+            return res.status(400).json({
+                success: false,
+                message: 'categoryId is required'
+            });
+        }
+
+        await Category.findByIdAndDelete(categoryId);
+
+        res.status(200).json({
+            success: true,
+            message: 'Category deleted successfully'
+        });
+    }
+    catch (error) {
+        console.log('Error while deleting Category');
+        console.log(error);
+        res.status(500).json({
+            success: false,
+            message: 'Error while deleting Category',
+            error: error.message
+        })
+    }
+}
+
+
 // ================ get All Category ================
 exports.showAllCategories = async (req, res) => {
     try {
