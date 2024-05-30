@@ -14,7 +14,7 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import CourseDetails from './pages/CourseDetails';
 import Catalog from './pages/Catalog';
- 
+
 import Navbar from "./components/common/Navbar"
 
 import OpenRoute from "./components/core/Auth/OpenRoute"
@@ -38,6 +38,7 @@ import VideoDetails from './components/core/ViewCourse/VideoDetails';
 import { ACCOUNT_TYPE } from './utils/constants';
 
 import { HiArrowNarrowUp } from "react-icons/hi"
+import CreateCategory from "./components/core/Dashboard/CreateCategory";
 
 
 function App() {
@@ -147,6 +148,15 @@ function App() {
         >
           <Route path="dashboard/my-profile" element={<MyProfile />} />
           <Route path="dashboard/Settings" element={<Settings />} />
+
+          {/* Route only for Admin */}
+          {/* create category, all students, all instructors */}
+          {user?.accountType === ACCOUNT_TYPE.ADMIN && (
+            <>
+              <Route path="dashboard/create-category" element={<CreateCategory />} />
+            </>
+          )}
+
 
           {/* Route only for Students */}
           {/* cart , EnrolledCourses */}
