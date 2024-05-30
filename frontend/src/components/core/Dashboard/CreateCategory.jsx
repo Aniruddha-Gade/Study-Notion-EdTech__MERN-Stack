@@ -47,6 +47,8 @@ const CreateCategory = () => {
   // create new category
   const handleCreateCategory = async () => {
     await createNewCategory(newCategory, description, token)
+    setNewCategory('')
+    setDescription('')
   };
 
   const handleDeleteCategory = async (categoryId) => {
@@ -62,12 +64,14 @@ const CreateCategory = () => {
         <div className="flex flex-col w-1/2 gap-5">
           <input
             type='text'
+            value={newCategory}
             placeholder="Enter new category name"
             onChange={(e) => setNewCategory(e.target.value)}
             className="text-white pl-4 w-full h-10 bg-transparent border-2 border-yellow-500 focus:border-none outline-yellow-10 rounded-2xl"
           />
           <input
             type='text'
+            value={description}
             placeholder="Enter description of category"
             onChange={(e) => setDescription(e.target.value)}
             className="text-white pl-4 w-full h-20 bg-transparent border-2 border-yellow-500 focus:border-none outline-yellow-10 rounded-2xl"
@@ -77,7 +81,7 @@ const CreateCategory = () => {
         <IconBtn
           text="Add"
           onclick={handleCreateCategory}
-          disabled={!newCategory || !description}
+          disabled={(!newCategory || !description) ? true:false }
         >
           <IoIosAdd />
         </IconBtn>
@@ -92,7 +96,7 @@ const CreateCategory = () => {
             subLinks?.map((subLink, i) => (
               <div key={i} className="flex justify-between gap-10">
                 <p>{subLink.name}</p>
-                <button onClick={()=>handleDeleteCategory(subLink._id)}>
+                <button onClick={() => handleDeleteCategory(subLink._id)}>
                   <RiDeleteBin6Line className="hover:text-pink-200 " />
                 </button>
               </div>
