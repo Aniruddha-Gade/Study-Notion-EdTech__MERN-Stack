@@ -151,7 +151,7 @@ const Navbar = () => {
                 {/* Login/SignUp/Dashboard */}
                 <div className='flex gap-x-4 items-center'>
                     {
-                        user && user?.accountType !== "Instructor" && (
+                        user && user?.accountType === "Student" && (
                             <Link to="/dashboard/cart" className="relative">
                                 <AiOutlineShoppingCart className="text-[2.35rem] text-richblack-5 hover:bg-richblack-700 rounded-full p-2 duration-200" />
                                 {totalItems > 0 && (
