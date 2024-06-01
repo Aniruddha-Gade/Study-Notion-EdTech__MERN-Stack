@@ -9,7 +9,7 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
 <h2>Explanation Video 📺 - [ https://www.youtube.com/watch?v=UP-kqPs4dJ8 ]</h2>
 <hr/>
 
-<h2>Live link 🌍📡 - [  https://study-notion-mern-stack.netlify.app/  ]</h2>
+<h2>Live link 🌍📡 - [  https://study-notion-full-stack.vercel.app/  ]</h2>
 <hr/>
 
 
