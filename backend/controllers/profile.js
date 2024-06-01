@@ -306,7 +306,7 @@ exports.instructorDashboard = async (req, res) => {
 
 
 
-// ================ instructor Dashboard ================
+// ================ get All Students ================
 exports.getAllStudents = async (req, res) => {
     try {
         const allStudentsDetails = await User.find({
@@ -314,10 +314,8 @@ exports.getAllStudents = async (req, res) => {
         })
             .populate('additionalDetails')
             .populate('courses')
-            .sort({ createdAt: 1 });
+            .sort({ createdAt: -1 });
 
-
-        // await User.deleteMany({accountType:'Instructor', email:{ $ne:'instructor1@gmail.com' }})
 
         const studentsCount = await User.countDocuments({
             accountType: 'Student'
@@ -335,6 +333,41 @@ exports.getAllStudents = async (req, res) => {
         console.error(error)
         res.status(500).json({
             message: 'Error while fetching all students',
+            error: error.message
+        })
+    }
+}
+
+
+
+
+// ================ get All Instructors ================
+exports.getAllInstructors = async (req, res) => {
+    try {
+        const allInstructorsDetails = await User.find({
+            accountType: 'Instructor'
+        })
+            .populate('additionalDetails')
+            .populate('courses')
+            .sort({ createdAt: -1 });
+
+
+        const instructorsCount = await User.countDocuments({
+            accountType: 'Instructor'
+        });
+
+
+        res.status(200).json(
+            {
+                allInstructorsDetails,
+                instructorsCount,
+                message: 'All Instructors Data fetched successfully'
+            }
+        )
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({
+            message: 'Error while fetching all Instructors',
             error: error.message
         })
     }

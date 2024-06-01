@@ -40,6 +40,7 @@ import { ACCOUNT_TYPE } from './utils/constants';
 import { HiArrowNarrowUp } from "react-icons/hi"
 import CreateCategory from "./components/core/Dashboard/CreateCategory";
 import AllStudents from './components/core/Dashboard/AllStudents';
+import AllInstructors from './components/core/Dashboard/AllInstructors';
 
 
 function App() {
@@ -156,6 +157,7 @@ function App() {
             <>
               <Route path="dashboard/create-category" element={<CreateCategory />} />
               <Route path="dashboard/all-students" element={<AllStudents />} />
+              <Route path="dashboard/all-instructors" element={<AllInstructors />} />
             </>
           )}
 
