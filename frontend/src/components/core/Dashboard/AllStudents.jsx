@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux'
-import { getAllStudentsData } from '../../../services/operations/profileAPI'
+import { getAllStudentsData } from '../../../services/operations/adminApi'
 import { Table, Th, Thead, Tr, Td, Tbody } from 'react-super-responsive-table';
 import IconBtn from '../../common/IconBtn';
 

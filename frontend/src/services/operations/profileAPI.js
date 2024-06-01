@@ -5,7 +5,7 @@ import { apiConnector } from "../apiConnector"
 import { profileEndpoints } from "../apis"
 import { logout } from "./authAPI"
 
-const { GET_USER_DETAILS_API, GET_USER_ENROLLED_COURSES_API, GET_INSTRUCTOR_DATA_API, GET_ALL_STUDENTS_DATA_API } = profileEndpoints
+const { GET_USER_DETAILS_API, GET_USER_ENROLLED_COURSES_API, GET_INSTRUCTOR_DATA_API, } = profileEndpoints
 
 
 // ================ get User Details  ================
@@ -71,23 +71,4 @@ export async function getInstructorData(token) {
   }
   // toast.dismiss(toastId)
   return result
-}
-
-
-
-// ================ get Instructor Data  ================
-export async function getAllStudentsData(token) {
- 
-  let result = []
-  try {
-    const response = await apiConnector("GET", GET_ALL_STUDENTS_DATA_API, null, {
-      Authorization: `Bearer ${token}`,
-    })
-    console.log("GET_ALL_STUDENTS_DATA_API RESPONSE............", response)
-    result = response?.data
-  } catch (error) {
-    console.log("GET_ALL_STUDENTS_DATA_API ERROR............", error)
-    // toast.error("Could not get all students data")
-  }
-    return result
 }
