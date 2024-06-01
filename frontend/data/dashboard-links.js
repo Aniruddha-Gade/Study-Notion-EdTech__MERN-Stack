@@ -49,4 +49,11 @@ export const sidebarLinks = [
     type: ACCOUNT_TYPE.ADMIN,
     icon: "VscNewFolder",
   },
+  {
+    id: 8,
+    name: "All Students",
+    path: "/dashboard/all-students",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscBook",
+  },
 ];

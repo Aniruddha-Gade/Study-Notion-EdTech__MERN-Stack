@@ -302,3 +302,40 @@ exports.instructorDashboard = async (req, res) => {
         res.status(500).json({ message: "Server Error" })
     }
 }
+
+
+
+
+// ================ instructor Dashboard ================
+exports.getAllStudents = async (req, res) => {
+    try {
+        const allStudentsDetails = await User.find({
+            accountType: 'Student'
+        })
+            .populate('additionalDetails')
+            .populate('courses')
+            .sort({ createdAt: 1 });
+
+
+        // await User.deleteMany({accountType:'Instructor', email:{ $ne:'instructor1@gmail.com' }})
+
+        const studentsCount = await User.countDocuments({
+            accountType: 'Student'
+        });
+
+
+        res.status(200).json(
+            {
+                allStudentsDetails,
+                studentsCount,
+                message: 'All Students Data fetched successfully'
+            },
+        )
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({
+            message: 'Error while fetching all students',
+            error: error.message
+        })
+    }
+}

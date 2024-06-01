@@ -39,6 +39,7 @@ import { ACCOUNT_TYPE } from './utils/constants';
 
 import { HiArrowNarrowUp } from "react-icons/hi"
 import CreateCategory from "./components/core/Dashboard/CreateCategory";
+import AllStudents from './components/core/Dashboard/AllStudents';
 
 
 function App() {
@@ -154,6 +155,7 @@ function App() {
           {user?.accountType === ACCOUNT_TYPE.ADMIN && (
             <>
               <Route path="dashboard/create-category" element={<CreateCategory />} />
+              <Route path="dashboard/all-students" element={<AllStudents />} />
             </>
           )}
 

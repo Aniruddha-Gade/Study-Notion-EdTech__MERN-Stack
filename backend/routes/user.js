@@ -17,7 +17,8 @@ const {
 
 
 // Middleware
-const { auth } = require('../middleware/auth');
+const { auth, isAdmin } = require('../middleware/auth');
+const { getAllStudents } = require('../controllers/profile');
 
 
 // Routes for Login, Signup, and Authentication
@@ -49,6 +50,14 @@ router.post('/reset-password-token', resetPasswordToken);
 
 // Route for resetting user's password after verification
 router.post("/reset-password", resetPassword)
+
+
+// ********************************************************************************************************
+//                                     Only for Admin - getAllStudents & getAllInstructors
+// ********************************************************************************************************
+
+router.get("/all-students", auth, isAdmin, getAllStudents)
+
 
 
 module.exports = router

@@ -27,7 +27,7 @@ const Dashboard = () => {
             <Sidebar />
 
             <div className='h-[calc(100vh-3.5rem)] overflow-auto w-full'>
-                <div className='mx-auto w-11/12 max-w-[1000px] py-10 '>
+                <div className=' p-10 '>
                     <Outlet />
                 </div>
             </div>
